@@ -4,7 +4,7 @@ const app = express();
 
 const backendServiceEndpoint = `http://backend/hello-backend`
 
-app.get('/hello-frontend', (req, res) => res.send('Hello from the frontend!'));
+app.get('/', (req, res) => res.send('Hello from the frontend! <a href="/call-backend">Call backend</a>'));
 
 app.get('/call-backend', (req, res) => {
   // Query the backend and return the response

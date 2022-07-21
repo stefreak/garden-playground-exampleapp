@@ -9,6 +9,6 @@ services:
         containerPort: 8080
         servicePort: 80
     ingresses:
-      - path: /hello-backend
+      - path: /
         port: http
-        hostname: backend-backend
+        hostname: backend.steffen-ines.kubecon.demo.garden

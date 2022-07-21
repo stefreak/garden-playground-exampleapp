@@ -8,11 +8,8 @@ services:
       - name: http
         containerPort: 8080
     ingresses:
-      - path: /hello-frontend
+      - path: /
         port: http
-        hostname: frontend-frontend
-      - path: /call-backend
-        port: http
-        hostname: frontend-backend
+        hostname: frontend.steffen-ines.kubecon.demo.garden
     dependencies:
       - backend
