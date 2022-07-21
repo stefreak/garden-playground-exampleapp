@@ -10,7 +10,9 @@ services:
     ingresses:
       - path: /hello-frontend
         port: http
+        hostname: frontend-frontend
       - path: /call-backend
         port: http
+        hostname: frontend-backend
     dependencies:
       - backend

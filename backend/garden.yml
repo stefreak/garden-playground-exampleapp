@@ -11,3 +11,4 @@ services:
     ingresses:
       - path: /hello-backend
         port: http
+        hostname: backend-backend
