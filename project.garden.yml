@@ -4,18 +4,12 @@ name: demo-project-start
 environments:
   - name: dev
     defaultNamespace: ${local.username}
-# Garden defaults to the first environment in the configuration anyway, 
-# so this option is not necessary
-# defaultEnvironment: dev
 
 providers:
   - name: kubernetes
     context: gke_garden-demo-324810_europe-west1-b_demo-3
 
-    # setupIngressController: nginx
-
     ingressClass: "nginx"
-
     buildMode: cluster-buildkit
 
     imagePullSecrets:
